@@ -1,4 +1,13 @@
 {
   "name" : "bad-tech",
-  "rules": [ ]
+  "rules": [
+    {
+      "sites": ["*://www.liberation.fr/*"],
+      "actions": [
+          { "action": "block",
+            "message": "This site masks third-party cookies as first-party cookies. See discussion here: https://github.com/uBlockOrigin/uBlock-issues/issues/780"
+          }
+       ]
+    }
+  ]
 }
